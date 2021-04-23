@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery carousel</title>
+        <link rel="stylesheet" href="./assets/css/slick.css" />
+        <link rel="stylesheet" href="./assets/css/slick-theme.css" />
+
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .container {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            .slick-arrow::before {
+                color:black;
+            }
+
+            .slick-side: {
+                margin: 0 5px;
+            }
+
+            .slick-list {
+                margin: 0 -5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="your-class">
+                <div>
+                    <img src="http://placehold.it/1200x400" />
+                </div>
+                <div>
+                    <img src="http://placehold.it/1200x400" />
+                </div>
+                <div>
+                    <img src="http://placehold.it/1200x400" />
+                </div>
+                <div>
+                    <img src="http://placehold.it/1200x400" />
+                </div>
+                <div>
+                    <img src="http://placehold.it/1200x400" />
+                </div>
+                <div>
+                    <img src="http://placehold.it/1200x400" />
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.your-class').slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3});
+            });
+        </script>
+    </body>
+</html>
